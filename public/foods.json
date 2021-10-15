@@ -43,37 +43,37 @@
             "name": "Healthy Meal plan",
             "price": 23.99,
             "desc": "How we dream about our future",
-            "img": "../src/images/lunch/lunch1.png"
+            "img": "https://lh3.googleusercontent.com/tA5GVFPlPtOc7VkxQYjH1iAAi19mo8wo3UfBMDJtPmQ6yFOpf2UaWAermxN1a2Ya_EWjUQ=s85"
         },
         {
             "name": "Fried Chicked Bento",
             "price": 9.99,
             "desc": "How we dream about our future",
-            "img": "../src/images/lunch/lunch2.png"
+            "img": "https://lh3.googleusercontent.com/ov37pDmD7bxAfl3s_f1X3bSBYH9jAoxOLKr0qKXF8KzMciEsb9krfS4XSjqw6xI1286ZUZ8=s85"
         },
         {
             "name": "Tarragaon-Rubbed-Salmon",
             "price": 6.99,
             "desc": "How we dream about our future",
-            "img": "../src/images/lunch/lunch3.png"
+            "img": "https://lh3.googleusercontent.com/eDyCBiPRFMGXyRL17zczVHWMu_-6BT5inE8RQe_j1P3Ut-6JG76tTA84O22LfSF4wJgrQ7s=s85"
         },
         {
             "name": "Indian Lunch",
             "price": 8.99,
             "desc": "How we dream about our future",
-            "img": "../src/images/lunch/lunch4.png"
+            "img": "https://lh3.googleusercontent.com/qCRM-SpsXieCAgURuoj3So12i68HJPmirB3wzOB47OaMwdeyohadNoQ-ANSFpb3pX6mjFQ=s94"
         },
         {
             "name": "Beef steak",
             "price": 15.99,
             "desc": "How we dream about our future",
-            "img": "../src/images/lunch/lunch5.png"
+            "img": "https://lh3.googleusercontent.com/g_EiLqiTv3gP8JkgOgQIEQvp8QYvXBFpyFyJKaIa67zkqWngVmf0wyq7odCwBi9L8Iex=s86"
         },
         {
             "name": "Honey-Soy-Glazed",
             "price": 7.99,
             "desc": "How we dream about our future",
-            "img": "../src/images/lunch/lunch6.png"
+            "img": "https://lh3.googleusercontent.com/PMpYOklla1CtFnsbH6JX9mcS_F3rkAUCpUCFS0Ordaq3EGQU_nfCJHKGXUqeMpE5N5j-mns=s85"
         }
     ],
     "dinner": [
