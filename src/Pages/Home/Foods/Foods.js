@@ -33,7 +33,7 @@ const Foods = () => {
                 </Row>
                 <div className="text-center">
                     <NavLink className="text-decoration-none bg-gray" to="/checkout">
-                        <Button variant="danger" className="my-3">Checkout Your Food</Button>
+                        <Button variant="secondary" className="my-3">Checkout Your Food</Button>
                     </NavLink>
                 </div>
             </Container>
