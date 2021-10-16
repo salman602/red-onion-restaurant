@@ -5,15 +5,17 @@ import logo from '../../images/logo2.png';
 // import { faFacebook, faGoogle, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import fbIcon from '../../images/ICON/facebook.png';
 import googleIcon from '../../images/ICON/google.png';
-import gmailIcon from '../../images/ICON/gmail.png';
+import twitterIcon from '../../images/ICON/twitter.png';
 import './Login.css';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 
 const Login = () => {
     // const fbIcon = <FontAwesomeIcon icon={faFacebook} />
     // const googleIcon = <FontAwesomeIcon icon={faGoogle} />
     // const twitterIcon = <FontAwesomeIcon icon={faTwitter} />
+    const { signInUsingGoogle } = useAuth();
     return (
         <div className="login-section pt-4">
             <div className="d-flex justify-content-center align-items-center">
@@ -41,29 +43,23 @@ const Login = () => {
                     <Button className="w-100 mt-3" variant="danger" type="submit">
                         Login
                     </Button>
-                    <p className="text-center text-danger mt-1">or sign in using</p>
+                    <p className="text-center text-danger mt-1">or Login using</p>
                     <Container>
                         <Row>
                             <Col xs={6} md={4}>
-                                <Link>
-                                    <button className="border-0 bg-transparent">
-                                        <Image src={googleIcon} rounded width="40" height="40" />
-                                    </button>
-                                </Link>
+                                <button onClick={signInUsingGoogle} className="border-0 bg-transparent">
+                                    <Image src={googleIcon} rounded width="40" height="40" />
+                                </button>
                             </Col>
                             <Col xs={6} md={4}>
-                                <Link>
-                                    <button className="border-0 bg-transparent">
-                                        <Image src={fbIcon} rounded width="40" height="40" />
-                                    </button>
-                                </Link>
+                                <button className="border-0 bg-transparent">
+                                    <Image src={fbIcon} rounded width="40" height="40" />
+                                </button>
                             </Col>
                             <Col xs={6} md={4}>
-                                <Link>
-                                    <button className="border-0 bg-transparent">
-                                        <Image src={gmailIcon} rounded width="40" height="40" />
-                                    </button>
-                                </Link>
+                                <button className="border-0 bg-transparent">
+                                    <Image src={twitterIcon} rounded width="45" height="45" />
+                                </button>
                             </Col>
                         </Row>
                     </Container>
