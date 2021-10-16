@@ -1,0 +1,8 @@
+
+.card-item{
+    transition: 0.5s;
+}
+.card-item:hover{
+    box-shadow: 2px 3px 2px 2px #999999;
+    
+}

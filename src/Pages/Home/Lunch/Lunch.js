@@ -6,20 +6,24 @@ import { Card, Col } from 'react-bootstrap';
 // import img4 from '../../../images/lunch/lunch4.png';
 // import img5 from '../../../images/lunch/lunch5.png';
 // import img6 from '../../../images/lunch/lunch6.png';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Lunch = ({ lunch }) => {
-    const { name, price, desc, img } = lunch;
+    const { title, price, description, image } = lunch;
+    const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />
     return (
-        <Col>
-            <Card className="h-100 shadow">
-                <Card.Img width="400" height="280" variant="top" src={img} />
-                <Card.Body className="text-center">
-                    <Card.Title>{name}</Card.Title>
+        <Col id="lunch">
+            <Card className="h-100 p-1 border-0 card-item">
+                <Card.Img width="200" height="200" variant="top" src={image} />
+                <Card.Body className="text-center p-2">
+                    <Card.Title>{title}</Card.Title>
                     <Card.Text>
-                        {desc}
+                        {description.slice(0, 25)}
                     </Card.Text>
                     <Card.Subtitle>${price}</Card.Subtitle>
                 </Card.Body>
+                <button className="btn-danger rounded border-0 w-50 mb-3 mx-auto">{cartIcon} Add to Cart</button>
             </Card>
         </Col>
     );

@@ -10,7 +10,7 @@ import useAuth from '../../../hooks/useAuth';
 const Header = () => {
     const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
 
-    const { user, logOut } = useAuth();
+    const { user, logOut, signInUsingEmailAndPassword } = useAuth();
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="white" variant="white">
@@ -30,7 +30,7 @@ const Header = () => {
                             <NavLink to="/cart" className="fw-normal pt-2 text-black">{cartIcon}</NavLink>
 
                             {!user?.email ? <Link to="/login">
-                                <Button variant="link" className="text-decoration-none ms-3 text-black fw-normal"
+                                <Button onClick={signInUsingEmailAndPassword} variant="link" className="text-decoration-none ms-3 text-black fw-normal"
                                 >Login</Button>
                             </Link> : <Button variant="link"
                                 onClick={logOut}

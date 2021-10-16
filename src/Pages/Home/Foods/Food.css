@@ -1,0 +1,11 @@
+.hashlink-style{
+    text-decoration: none;
+    color: crimson;
+    border-bottom: 3px solid crimson;
+    padding: 4px 0;
+}
+
+.hashlink-style:hover{
+    color: crimson;
+    font-weight: 500;
+}

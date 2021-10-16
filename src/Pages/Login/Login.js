@@ -15,7 +15,7 @@ const Login = () => {
     // const fbIcon = <FontAwesomeIcon icon={faFacebook} />
     // const googleIcon = <FontAwesomeIcon icon={faGoogle} />
     // const twitterIcon = <FontAwesomeIcon icon={faTwitter} />
-    const { signInUsingGoogle } = useAuth();
+    const { signInUsingGoogle, signInUsingEmailAndPassword } = useAuth();
     return (
         <div className="login-section pt-4">
             <div className="d-flex justify-content-center align-items-center">
@@ -40,7 +40,7 @@ const Login = () => {
                         <label htmlFor="floatingPasswordCustom">Password</label>
                     </Form.Floating>
 
-                    <Button className="w-100 mt-3" variant="danger" type="submit">
+                    <Button onClick={signInUsingEmailAndPassword} className="w-100 mt-3" variant="danger" type="submit">
                         Login
                     </Button>
                     <p className="text-center text-danger mt-1">or Login using</p>
